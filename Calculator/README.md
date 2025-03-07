@@ -11,9 +11,10 @@
 
 📁**프로젝트 구조**
 ```
-📦CalculatorProject
-📄APP.java
+📦Calculator
+📄App.java
 📄Calculator.java
+📄README.md
 ```
 
 ⚙**기능 목록**
