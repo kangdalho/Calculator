@@ -9,7 +9,7 @@ public class Calculator {
     private final List<Double> history;
 
     //생성자
-    public Calculator() {
+    Calculator() {
         this.history = new ArrayList<>();
     }
 
