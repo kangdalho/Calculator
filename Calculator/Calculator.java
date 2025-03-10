@@ -5,15 +5,15 @@ import java.util.List;
 
 public class Calculator {
 
-    //속성
+    /**속성*/
     private final List<Double> history;
 
-    //생성자
+    /**생성자*/
     Calculator() {
         this.history = new ArrayList<>();
     }
 
-    //메서드
+    /**메서드*/
     public double calculate(double num1, double num2, char op) {
         double result;
         if (op == '+') {
@@ -32,15 +32,15 @@ public class Calculator {
             System.out.println("잘못된 연산자입니다.");
             return Double.NaN;
         }
-        //연산 결과 저장
+        /**연산 결과 저장*/
         history.add(result);
         return result;
     }
-    //getter 메서드
+    /**getter 메서드*/
     public List<Double> getHistory() {
         return new ArrayList<>(history);
     }
-    //삭제 메서드
+    /**삭제 메서드*/
     public void removeResult() {
       if (history.isEmpty()) {
         System.out.println("삭제할 연산 기록이 없습니다.");
