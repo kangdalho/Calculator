@@ -34,7 +34,7 @@ public class App {
             if (answer2.equalsIgnoreCase("exit"))
                 break;
         }
-    } final{
+    } finally{
             sc.close();
             System.out.println("scanner를 닫았습니다.");
     }
