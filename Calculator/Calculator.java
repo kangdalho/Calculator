@@ -42,11 +42,12 @@ public class Calculator {
     }
     //삭제 메서드
     public void removeResult() {
-        if (!history.isEmpty()) {
-            history.remove(0);
-            System.out.println("가장 오래된 연산 기록이 삭제되었습니다.");
-        } else {
-            System.out.println("삭제할 연산 기록이 없습니다.");
-        }
+      if (history.isEmpty()) {
+        System.out.println("삭제할 연산 기록이 없습니다.");
+        return;
+    }
+    history.remove(0);
+    System.out.println("가장 오래된 연산 기록이 삭제되었습니다.");
+    System.out.println("현재 연산 기록: " + history);
     }
 }
